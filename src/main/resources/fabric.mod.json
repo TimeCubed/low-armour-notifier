@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "low-armour-notifier",
+	"version": "${version}",
+	"name": "Low Armour Notifier",
+	"description": "This mod will alert you if your armour has low durability so you don't break it!",
+	"authors": [
+		"TimeSquared (aka SummerNugget, or me :D)",
+		"lske for icon help (discord: lske_)",
+		"JanDev for the custom config screens (discord server: https://discord.gg/zurPghb8Pv)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/low-armour-notification/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.timesquared.lowarmournotif.MainServer"
+		],
+		"client": [
+			"me.timesquared.lowarmournotif.MainClient"
+		]
+	},
+	"mixins": [
+		"low-armour-notification.mixins.json",
+		{
+			"config": "low-armour-notification.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": ">=1.19",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
