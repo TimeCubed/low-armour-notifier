@@ -40,7 +40,7 @@ public class MainClient implements ClientModInitializer {
 			throw new RuntimeException("Could not load config file: " + ioException);
 		}
 		
-		ClientCommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess) -> dispatcher.register(ClientCommandManager.literal("armournotifications").executes(context -> {
+		ClientCommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess) -> dispatcher.register(ClientCommandManager.literal("armornotifier").executes(context -> {
 			mc.send(() -> mc.setScreen(new ConfigScreen(Text.of("config"))));
 			return 1;
 		})))); // Register config command

@@ -54,8 +54,7 @@ public class ConfigScreen extends Screen {
 		
 		ButtonWidget toggleSound = ButtonWidget.builder(Text.of("Sounds: " + (ConfigManager.isSound() ? "Yes" : "No")), button -> {
 			ConfigManager.setSound(!ConfigManager.isSound());
-			mc.setScreen(null);
-
+			button.setMessage(Text.of("Sounds: " + (ConfigManager.isSound() ? "Yes" : "No")));
 		}).dimensions(this.width / 2 - 62, this.height / 2 + 25, 125, 20).build();
 		this.addDrawableChild(toggleSound);
 	}
