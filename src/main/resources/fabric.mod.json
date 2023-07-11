@@ -10,8 +10,8 @@
 		"Jan for the custom config screens (discord server: https://discord.gg/zurPghb8Pv)"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/low-armour-notifier",
+		"sources": "https://github.com/TimeCubed/low-armour-notifier"
 	},
 	"license": "MIT",
 	"icon": "assets/low-armour-notification/icon.png",
