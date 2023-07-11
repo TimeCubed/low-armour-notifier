@@ -23,7 +23,7 @@ public class ConfigScreen extends Screen {
 		
 		ButtonWidget doneButton = ButtonWidget.builder(Text.of("Done"), button -> {
 			String content = armourAlert.getText();
-			int output = 0;
+			int output;
 			
 			try {
 				output = Integer.parseInt(content);

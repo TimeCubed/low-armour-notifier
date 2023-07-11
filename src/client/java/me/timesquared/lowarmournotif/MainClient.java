@@ -15,7 +15,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 
 import java.io.IOException;
-import java.io.ObjectInputFilter;
 
 public class MainClient implements ClientModInitializer {
 	public static final MainClient INSTANCE = new MainClient();
@@ -73,17 +72,6 @@ public class MainClient implements ClientModInitializer {
 			checkDura(chestPlateSlot, chestDuraPercent, lastChestTickPercent, "chestplate");
 			checkDura(leggingsSlot, leggingsDuraPercent, lastLeggingsTickPercent, "leggings");
 			checkDura(bootsSlot, bootsDuraPercent, lastBootsTickPercent, "boots");
-			
-//			MainServer.LOGGER.info(
-//					"\nHelmet Dura: " + helmetCurrentDura +
-//					"\nChest Dura: " + chestCurrentDura +
-//					"\nLeggings Dura: " + leggingsCurrentDura +
-//					"\nBoots Dura: " + bootsCurrentDura +
-//					"\nPercent helm: " + helmetDuraPercent + " and " + lastHelmetTickPercent +
-//					"\nPercent chest: " + chestDuraPercent + " and " + lastChestTickPercent +
-//					"\nPercent leggings: " + leggingsDuraPercent + " and " + lastLeggingsTickPercent +
-//					"\nPercent boots: " + bootsDuraPercent + " and " + lastBootsTickPercent
-//			);
 			
 			lastHelmetTickPercent = helmetDuraPercent;
 			lastChestTickPercent = chestDuraPercent;
