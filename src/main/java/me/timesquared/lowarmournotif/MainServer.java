@@ -9,6 +9,6 @@ public class MainServer implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Initialized mod successfully!");
+	
 	}
 }
